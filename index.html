@@ -1,0 +1,83 @@
+<!--
+  Curso: Javascript
+  Estudiante: José Miguel Molina Rondón
+  1era Entrega del Proyecto Final | 16-08-2020
+
+  Se muestra el logo de BRUSA perteciente a mi pareja que es Diseñadora Gráfica
+  Este proyecto será el inicio a mediano plazo de una nueva web en el dominio brusacrea.com
+
+  Se trata de un cotizador de trabajos de diseño gráfico.
+  Puedes solicitar logos, combos de papelería, combos de empaques y combos de branding
+
+  Si presionas solicitar en el botón a la derecha de Logotipo se despliega una Prompt
+  que te pide la cantidad de logos que deseas solicitar y te indica el precio.
+  Por cantidades superiores a 1 se otorga u 10% de descuento. Este botón
+  invoca la función que calcula los descuentos y totales para logotipos solicitados.
+
+  Esta misma modalidad se utiliza para papelería, branding y empaque donde el 
+  prompt informa sobre el contenido de cada combo y también da descuento 
+  para cantidades superiores a 1 y hace el cálculo correspondiente.
+
+  Finalmente el botón COTIZAR, invoca al OBJETO miCotización mediante una función
+  y ejecuta todos los cálculos totales utilizando los resultados de las funciones
+  anterior y con métodos del propio objeto hace el total final agregando IVA
+  La moneda se muestra en CLP (pesos chilenos).
+
+  Como el ejercicio también pide arreglos, se tiene una función que recicla
+  las cantidades actuales pedidas para cada tipo de solicitud, se invoca dentro del Objeto
+  miCotización y se muestra a modo de RESUMEN DE SOLICITUDES en el console y el alert.
+  Dicho arreglo fue completado con push y join.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/operaciones.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contenido">
+    <!---
+    <header>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     </header>-->
+     <header>
+       <img src="image/logoBrusaDesign.png">
+    </header>
+     <!--<h1>Identidad gráfica</h1>-->
+     <div class="frame">
+      <h1>¡Cotiza tus requerimientos!</h1>
+         <table>
+            <tr>
+              <td class="td1">Logotipo</td>
+              <td class="td2"><button class="custom-btn btn-2" onclick="solicitarLogo()">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="td1">Papelería</td>
+              <td class="td2"><button class="custom-btn btn-2" onclick="solicitarPapeleria()">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="td1">Empaque</td>
+              <td class="td2"><button class="custom-btn btn-2" onclick="solicitarEmpaque()">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="td1">Branding</td>
+              <td class="td2"><button class="custom-btn btn-2" onclick="solicitarBranding()">Solicitar</button></td>
+            </tr>
+            <tr>
+              <td class="td1"></td>
+              <td class="td2"><button class="custom-btn btn-3" onclick="totalCotizacion()">Cotizar</button></td>
+            </tr>
+          </table>
+     </div>
+     <p class="footer"> 1era Entrega | Javascript </p>
+    </div>
+    
+</body>
+</html>
+
+
+ 
